@@ -1,9 +1,4 @@
-enum Api {
-
-  // dummyjson Path
-  
-
-  // typicode Path
+enum TypiCodeApi {
   post("/posts"),
   comments("/comments"),
   albums("/albums"),
@@ -11,10 +6,9 @@ enum Api {
   todos("/todos"),
   products("/products");
 
-  const Api(this.path);
+  const TypiCodeApi(this.path);
 
   final String path;
 
   static const typicodeUrl = "jsonplaceholder.typicode.com";
-  static const dammyUrl = "dummyjson.com";
 }
